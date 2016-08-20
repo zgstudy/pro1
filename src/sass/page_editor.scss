@@ -1,0 +1,144 @@
+@import 'common/common';
+
+$fontColor: #4c4c4c;
+
+// .select {
+//     .text {
+//         color: $fontColor;
+//         .iconfont {
+//             float: right;
+//             font-size: 16px;
+//             color: #b4b4b4; 
+//         }
+//     }
+// }
+.select {
+    color: $fontColor;
+    .iconfont {
+        position: absolute;
+        right: 15px;
+        color: #b4b4b4;
+    }
+}
+
+.weui_tab_bd_item{
+    .personal-info {
+        font-size: 18px;
+        color: $fontColor;
+        background-color: #c7e5fa;
+        border-bottom: 1px solid #60abe7;
+        padding: 6px 0;
+        text-align: center; 
+    }
+
+    .weui_cells_form {
+        margin-top: 0;
+        background-color: $bgColor;
+        .weui_label {
+            color: #999;
+        } 
+        .weui_input {
+            color: $fontColor;
+            position: relative;
+            z-index: 2;
+        }
+        .card1 {
+            background-color: $cardBgColor;
+            border-top: 1px solid $borderColor;
+            border-bottom: 1px solid $borderColor;
+            .weui_uploader {
+                .weui_uploader_input_wrp {
+                    border: 0;
+                    margin-right: 0;
+                    margin-bottom: 4px;
+                    width: 70px;
+                    height: 70px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 50%;
+                    }
+                    &:before, &:after {
+                        width: 0;
+                        height: 0;
+                    }
+                    .weui_uploader_input {
+                    }
+                }
+            }
+            .select-city {
+                @extend .select;
+            }
+        }
+        .card2 {
+            margin-top: 16px;
+            background-color: $cardBgColor;
+            border-top: 1px solid $borderColor;
+            border-bottom: 1px solid $borderColor;
+            .select-year, .select-tech, .select-job {
+                @extend .select;
+            }
+        }
+        .card3 {
+            margin-top: 16px;
+            background-color: $cardBgColor;
+            border-top: 1px solid $borderColor;
+            border-bottom: 1px solid $borderColor;
+            .weui_cells_title {
+                font-size: 17px;
+                color: #999;
+            }
+        }
+        .card4 {
+            margin-top: 16px;
+            background-color: $cardBgColor;
+            border-top: 1px solid $borderColor;
+            border-bottom: 1px solid $borderColor;
+            .weui_cells_title {
+                font-size: 17px;
+                color: #999;
+                border-bottom: 1px solid #d9d9d9;
+                padding-bottom: 0.3em;  
+                margin-bottom: 0;
+            }
+            .weui_cell_my {
+                &:before {
+                    border-top: 0 none;
+                } 
+                .weui_cell_primary {
+                    .title {
+                        padding-bottom: 10px;
+                        border-bottom: 1px solid $borderColor;
+                    }
+                    .content {
+                        margin-top: 10px; 
+                        padding-bottom: 10px;
+                        border-bottom: 1px solid $borderColor;
+                    }
+                    .weui_cell {
+                        padding-left: 0;
+                        padding-right: 0;
+                    }
+                    .btn-wrap {
+                        .weui_btn {
+                            width: 50%;
+                            border-radius: 0;
+                            margin-left: 0;
+                            line-height: 2;
+                        }
+                        .weui_btn_plain_primary {
+                            color: #50adf8;
+                            border: 1px solid #50adf8;
+                        }
+                    }
+                }
+            }
+        }
+        .card5 {
+            padding: 10px 15px;
+            .weui_btn_primary {
+                background-color: #50adf8;
+            }
+        }
+    }
+}

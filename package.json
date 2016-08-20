@@ -1,0 +1,27 @@
+{
+  "name": "pro1",
+  "version": "0.0.1",
+  "description": "pro1",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Cleam Lee <lizhigao1231@163.com>",
+  "contributors": [
+    {
+      "name": "lizhigao",
+      "email": "lizhigao@021.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "license": "MIT",
+  "homepage": "",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2"
+  },
+  "dependencies": {}
+}

@@ -1,0 +1,196 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'iconfont';
+  src: url("//at.alicdn.com/t/font_1471659257_2342687.eot");
+  /* IE9*/
+  src: url("//at.alicdn.com/t/font_1471659257_2342687.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_1471659257_2342687.woff") format("woff"), url("//at.alicdn.com/t/font_1471659257_2342687.ttf") format("truetype"), url("//at.alicdn.com/t/font_1471659257_2342687.svg#iconfont") format("svg");
+  /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont";
+  font-size: inherit;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+html, body {
+  height: 100%;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #b2b1b1;
+}
+
+.weui_tabbar {
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  align-items: center;
+  height: 49px;
+}
+
+.weui_tabbar .weui_tabbar_item {
+  padding: 0;
+}
+
+.weui_tabbar .weui_tabbar_item .weui_tabbar_label {
+  font-size: 16px;
+}
+
+.weui_tabbar .weui_tabbar_item.weui_bar_item_on .weui_tabbar_label {
+  color: #4eaffb;
+}
+
+.weui_tab_bd {
+  padding-bottom: 49px;
+  background-color: #f2f2f2;
+}
+
+/* 覆盖样式 */
+.toolbar .picker-button {
+  color: #4eaffb;
+}
+
+.select, .weui_tab_bd_item .weui_cells_form .card1 .select-city, .weui_tab_bd_item .weui_cells_form .card2 .select-year, .weui_tab_bd_item .weui_cells_form .card2 .select-tech, .weui_tab_bd_item .weui_cells_form .card2 .select-job {
+  color: #4c4c4c;
+}
+
+.select .iconfont, .weui_tab_bd_item .weui_cells_form .card1 .select-city .iconfont, .weui_tab_bd_item .weui_cells_form .card2 .select-year .iconfont, .weui_tab_bd_item .weui_cells_form .card2 .select-tech .iconfont, .weui_tab_bd_item .weui_cells_form .card2 .select-job .iconfont {
+  position: absolute;
+  right: 15px;
+  color: #b4b4b4;
+}
+
+.weui_tab_bd_item .personal-info {
+  font-size: 18px;
+  color: #4c4c4c;
+  background-color: #c7e5fa;
+  border-bottom: 1px solid #60abe7;
+  padding: 6px 0;
+  text-align: center;
+}
+
+.weui_tab_bd_item .weui_cells_form {
+  margin-top: 0;
+  background-color: #f2f2f2;
+}
+
+.weui_tab_bd_item .weui_cells_form .weui_label {
+  color: #999;
+}
+
+.weui_tab_bd_item .weui_cells_form .weui_input {
+  color: #4c4c4c;
+  position: relative;
+  z-index: 2;
+}
+
+.weui_tab_bd_item .weui_cells_form .card1 {
+  background-color: #fff;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.weui_tab_bd_item .weui_cells_form .card1 .weui_uploader .weui_uploader_input_wrp {
+  border: 0;
+  margin-right: 0;
+  margin-bottom: 4px;
+  width: 70px;
+  height: 70px;
+}
+
+.weui_tab_bd_item .weui_cells_form .card1 .weui_uploader .weui_uploader_input_wrp img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.weui_tab_bd_item .weui_cells_form .card1 .weui_uploader .weui_uploader_input_wrp:before, .weui_tab_bd_item .weui_cells_form .card1 .weui_uploader .weui_uploader_input_wrp:after {
+  width: 0;
+  height: 0;
+}
+
+.weui_tab_bd_item .weui_cells_form .card2 {
+  margin-top: 16px;
+  background-color: #fff;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.weui_tab_bd_item .weui_cells_form .card3 {
+  margin-top: 16px;
+  background-color: #fff;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.weui_tab_bd_item .weui_cells_form .card3 .weui_cells_title {
+  font-size: 17px;
+  color: #999;
+}
+
+.weui_tab_bd_item .weui_cells_form .card4 {
+  margin-top: 16px;
+  background-color: #fff;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.weui_tab_bd_item .weui_cells_form .card4 .weui_cells_title {
+  font-size: 17px;
+  color: #999;
+  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 0.3em;
+  margin-bottom: 0;
+}
+
+.weui_tab_bd_item .weui_cells_form .card4 .weui_cell_my:before {
+  border-top: 0 none;
+}
+
+.weui_tab_bd_item .weui_cells_form .card4 .weui_cell_my .weui_cell_primary .title {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.weui_tab_bd_item .weui_cells_form .card4 .weui_cell_my .weui_cell_primary .content {
+  margin-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.weui_tab_bd_item .weui_cells_form .card4 .weui_cell_my .weui_cell_primary .weui_cell {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.weui_tab_bd_item .weui_cells_form .card4 .weui_cell_my .weui_cell_primary .btn-wrap .weui_btn {
+  width: 50%;
+  border-radius: 0;
+  margin-left: 0;
+  line-height: 2;
+}
+
+.weui_tab_bd_item .weui_cells_form .card4 .weui_cell_my .weui_cell_primary .btn-wrap .weui_btn_plain_primary {
+  color: #50adf8;
+  border: 1px solid #50adf8;
+}
+
+.weui_tab_bd_item .weui_cells_form .card5 {
+  padding: 10px 15px;
+}
+
+.weui_tab_bd_item .weui_cells_form .card5 .weui_btn_primary {
+  background-color: #50adf8;
+}

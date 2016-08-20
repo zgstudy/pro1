@@ -1,0 +1,60 @@
+@import 'common/iconfont';
+@import 'common/reset';
+
+html, body {
+    height: 100%;
+}
+
+
+@mixin flex-align($pos:center){
+    -ms-flex-align: $pos;
+    -webkit-align-items: $pos;
+    -webkit-box-align: $pos;
+    align-items: $pos; 
+}
+
+@mixin transform-rotate($deg: 45deg) {
+    -webkit-transform: rotate($deg);
+    -moz-transform: rotate($deg);
+    -ms-transform: rotate($deg);
+    -o-transform: rotate($deg);
+    transform: rotate($deg);
+}
+
+$color: #4eaffb;
+$bgColor: #f2f2f2;
+$cardBgColor: #fff;
+$borderColor: #e5e5e5;
+
+input::-webkit-input-placeholder, 
+textarea::-webkit-input-placeholder { 
+    color: #b2b1b1;
+} 
+
+.weui_tabbar {
+    @include flex-align(center);
+    height: 49px;
+    // background-color: #f2f2f2;
+    // border-top: 1px solid #a6a6a6;
+    .weui_tabbar_item {
+        padding: 0;
+        .weui_tabbar_label {
+            font-size: 16px;
+        } 
+    }
+    .weui_tabbar_item.weui_bar_item_on {
+        .weui_tabbar_label {
+            color: $color;
+        }
+    }
+}
+
+.weui_tab_bd {
+    padding-bottom: 49px; 
+    background-color: $bgColor; 
+}
+
+/* 覆盖样式 */
+.toolbar .picker-button {
+    color: $color;
+}
