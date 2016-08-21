@@ -5,7 +5,7 @@ var gulp = require('gulp'),
     sass = require('gulp-sass');
 
 var src = {
-    scss: 'src/sass/*.scss'
+    scss: 'src/sass/**/*.scss'
 }
 
 var dest = {

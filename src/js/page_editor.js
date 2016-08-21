@@ -1,5 +1,8 @@
 /* global $ */
+/* global FastClick */
+/* global document */
 $(function(){
+    FastClick.attach(document.body);
     // 城市
     $("#city_picker").cityPicker({
         title: "请选择所在城市",
@@ -38,5 +41,15 @@ $(function(){
         }]
     });
     // 结束时间
-    $("#date_picker").calendar();
+    $("#date_picker").picker({
+        title: "请选择结束时间",
+        cols: [{
+            textAlign: 'center',
+            values: ['2013年', '2014年', '2015年', '2016年', '2017年']
+            //如果你希望显示文案和实际值不同，可以在这里加一个displayValues: [.....]
+        }, {
+            textAlign: 'center',
+            values: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月']
+        }]
+    });
 });
