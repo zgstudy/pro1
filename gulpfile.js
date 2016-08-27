@@ -2,7 +2,8 @@
 
 /* 工具模块 */
 var gulp = require('gulp'),
-    sass = require('gulp-sass');
+    sass = require('gulp-sass'),
+    sourcemaps = require('gulp-sourcemaps');
 
 var src = {
     scss: 'src/sass/**/*.scss'
@@ -14,13 +15,17 @@ var dest = {
 
 gulp.task('sass', function() {
     return gulp.src(src.scss)
+        .pipe(sourcemaps.init())
         .pipe(sass({ outputStyle: 'expanded' }).on('error', sass.logError))
+        .pipe(sourcemaps.write())
         .pipe(gulp.dest(dest.scss));
 });
 
 gulp.task('sass-compressed', function() {
     return gulp.src(src.scss)
+        .pipe(sourcemaps.init())
         .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
+        .pipe(sourcemaps.write())
         .pipe(gulp.dest(dest.scss));
 });
 

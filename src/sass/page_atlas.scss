@@ -1,0 +1,26 @@
+@import 'common/common';
+
+$fontColor: #4c4c4c;
+$titleFS: 18px;
+
+.header {
+    position: relative;
+    font-size: $titleFS;
+    color: $fontColor;
+    background-color: #c7e5fa;
+    border-bottom: 1px solid #60abe7;
+    padding: 3px 0;
+    text-align: center; 
+}
+
+.weui_tab_bd_item {
+    width: 100%;
+    &.weui-pull-to-refresh {
+        top: 0;
+        margin-top: -50px;
+    }
+    
+}
+
+
+
