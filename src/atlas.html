@@ -15,6 +15,36 @@
 <body>
     <div class="weui_tab">
         <div class="weui_tab_bd">
+            <div class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a class="pos" href="javascript:;">
+                            <input id="J_pos" class="weui_input" type="text" readonly="" value="地点">
+                            <i class="iconfont">&#xe600;</i>
+                            <span class="line"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="area" href="javascript:;">
+                            <input id="J_area" class="weui_input" type="text" readonly="" value="领域">
+                            <i class="iconfont">&#xe600;</i>
+                            <span class="line"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="cap" href="javascript:;">
+                            <input id="J_cap" class="weui_input" type="text" readonly="" value="职能">
+                            <i class="iconfont">&#xe600;</i>
+                            <span class="line"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="time" href="javascript:;">
+                            <input id="J_time" class="weui_input" type="text" readonly="" value="年限"><i class="iconfont">&#xe600;</i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
             <div id="tab2" class="weui_tab_bd_item weui_tab_bd_item_active">
                 <!-- body 顶部加上如下代码 -->
                 <div class="weui-pull-to-refresh-layer">
@@ -30,29 +60,72 @@
                     <div class="refresh">正在刷新...</div>
                 </div>
                 <!-- 其他内容 -->
-                <div class="nav">
-                    <ul class="nav-list">
-                        <li class="nav-item">
-                            <a class="pos" href="javascript:;">
-                                <input type="text" value="地点"><i class="iconfont">&#xe600;</i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="area" href="javascript:;">
-                                <input type="text" value="领域"><i class="iconfont">&#xe600;</i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="cap" href="javascript:;">
-                                <input type="text" value="职能"><i class="iconfont">&#xe600;</i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="time" href="javascript:;">
-                                <input type="text" value="年限"><i class="iconfont">&#xe600;</i>
-                            </a>
-                        </li>
-                    </ul>
+                <div id="J_cell_list" class="weui_cells weui_cells_access cell-list">
+                    <a class="weui_cell" href="javascript:;">
+                        <div class="weui_cell_hd">
+                            <div class="left">
+                                <p class="img"><img src="img/tx.png" alt=""></p>
+                                <p class="txt">张小强</p>
+                            </div>
+                        </div>
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <h2 class="title">高级Android工程师<span class="year">工作6年</span></h2>
+                            <p class="content">微信前端开发技术、JQuery、weui、Photoshop、AngularJS等。</p>
+                            <i class="iconfont">&#xe605;</i>
+                        </div>
+                    </a>
+                    <a class="weui_cell" href="javascript:;">
+                        <div class="weui_cell_hd">
+                            <div class="left">
+                                <p class="img"><img src="img/tx.png" alt=""></p>
+                                <p class="txt">张小强</p>
+                            </div>
+                        </div>
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <h2 class="title">高级Android工程师<span class="year">工作6年</span></h2>
+                            <p class="content">微信前端开发技术、JQuery、weui、Photoshop、AngularJS等。</p>
+                            <i class="iconfont">&#xe605;</i>
+                        </div>
+                    </a>
+                    <a class="weui_cell" href="javascript:;">
+                        <div class="weui_cell_hd">
+                            <div class="left">
+                                <p class="img"><img src="img/tx.png" alt=""></p>
+                                <p class="txt">张小强</p>
+                            </div>
+                        </div>
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <h2 class="title">高级Android工程师<span class="year">工作6年</span></h2>
+                            <p class="content">微信前端开发技术、JQuery、weui、Photoshop、AngularJS等。</p>
+                            <i class="iconfont">&#xe605;</i>
+                        </div>
+                    </a>
+                    <a class="weui_cell" href="javascript:;">
+                        <div class="weui_cell_hd">
+                            <div class="left">
+                                <p class="img"><img src="img/tx.png" alt=""></p>
+                                <p class="txt">张小强</p>
+                            </div>
+                        </div>
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <h2 class="title">高级Android工程师<span class="year">工作6年</span></h2>
+                            <p class="content">微信前端开发技术、JQuery、weui、Photoshop、AngularJS等。</p>
+                            <i class="iconfont">&#xe605;</i>
+                        </div>
+                    </a>
+                    <a class="weui_cell" href="javascript:;">
+                        <div class="weui_cell_hd">
+                            <div class="left">
+                                <p class="img"><img src="img/tx.png" alt=""></p>
+                                <p class="txt">张小强</p>
+                            </div>
+                        </div>
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <h2 class="title">高级Android工程师<span class="year">工作6年</span></h2>
+                            <p class="content">微信前端开发技术、JQuery、weui、Photoshop、AngularJS等。</p>
+                            <i class="iconfont">&#xe605;</i>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
