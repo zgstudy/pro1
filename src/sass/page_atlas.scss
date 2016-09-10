@@ -71,10 +71,10 @@ $titleFS: 18px;
 }
 
 .weui_tab_bd_item {
-    width: 100%;
+    width: 100%; 
+    padding-top: 19px; 
     .cell-list {
-        margin-top: 9px;
-        padding-bottom: 50px;
+        // padding-bottom: 50px;
         .weui_cell {
             .weui_cell_hd{
                 .left {
@@ -123,6 +123,9 @@ $titleFS: 18px;
                 }
             }
         }
+    }
+    .weui-infinite-scroll {
+        height: 40px;
     }
 }
 

@@ -9,10 +9,39 @@ $(function() {
         $area = $('#J_area'), // 领域
         $cap = $('#J_cap'), // 职能
         $time = $('#J_time'), // 年限
-        $cellList = $('#J_cell_list');
+        $cellList = $('#J_cell_list'),
+        loading = false,     //状态标记
+        // 滚动加载模拟数据
+        data = {
+            root: [{
+                img: 'img/temp/tx (' + Math.floor(Math.random() * 13 + 1) + ').jpg',
+                name: '张三',
+                title: '高级前端开发工程师',
+                content: '熟练掌握Web前端技术CSS/HTML/Javascript，有html5/css3开发经验。',
+                workyear: '3'
+            }, {
+                img: 'img/temp/tx (' + Math.floor(Math.random() * 13 + 1) + ').jpg',
+                name: '李四',
+                title: '高级JAVA开发工程师',
+                content: '熟练掌握Web前端技术CSS/HTML/Javascript，有html5/css3开发经验。',
+                workyear: '5'
+            }, {
+                img: 'img/temp/tx (' + Math.floor(Math.random() * 13 + 1) + ').jpg',
+                name: '王五',
+                title: '高级IOS开发工程师',
+                content: '熟练掌握Web前端技术CSS/HTML/Javascript，有html5/css3开发经验。',
+                workyear: '10'
+            }, {
+                img: 'img/temp/tx (' + Math.floor(Math.random() * 13 + 1) + ').jpg',
+                name: '赵六',
+                title: '资深前端开发工程师',
+                content: '熟练掌握Web前端技术CSS/HTML/Javascript，有html5/css3开发经验。',
+                workyear: '12'
+            }]
+        };
     $pos.select({
         title: "选择地点",
-        items: ["北京", "上海", "武汉", "长沙", "深圳", "成都"],
+        items: ["北京", "上海", "武汉", "长沙", "深圳", "成都", "aa", "bb", "cc", "dd", "ee", "ff", "gg", "hh"],
         onChange: function(item) {
             console.log(item);
             alert('您选择了：' + item.values);
@@ -43,40 +72,13 @@ $(function() {
         }
     });
 
-    $tab2.pullToRefresh().on("pull-to-refresh", function() {
-        // 这里添加下拉刷新业务代码
-        var data = {
-            root: [{
-                img: 'img/temp/tx (' + Math.floor(Math.random() * 13 + 1) + ').jpg',
-                name: '张三',
-                title: '高级前端开发工程师',
-                content: '熟练掌握Web前端技术CSS/HTML/Javascript，有html5/css3开发经验。',
-                workyear: '3'
-            }, {
-                img: 'img/temp/tx (' + Math.floor(Math.random() * 13 + 1) + ').jpg',
-                name: '李四',
-                title: '高级JAVA开发工程师',
-                content: '熟练掌握Web前端技术CSS/HTML/Javascript，有html5/css3开发经验。',
-                workyear: '5'
-            }, {
-                img: 'img/temp/tx (' + Math.floor(Math.random() * 13 + 1) + ').jpg',
-                name: '王五',
-                title: '高级IOS开发工程师',
-                content: '熟练掌握Web前端技术CSS/HTML/Javascript，有html5/css3开发经验。',
-                workyear: '10'
-            }, {
-                img: 'img/temp/tx (' + Math.floor(Math.random() * 13 + 1) + ').jpg',
-                name: '赵六',
-                title: '资深前端开发工程师',
-                content: '熟练掌握Web前端技术CSS/HTML/Javascript，有html5/css3开发经验。',
-                workyear: '12'
-            }]
-        };
-
+    $tab2.infinite().on("infinite", function() {
+        if (loading) return;
+        loading = true;
         setTimeout(function() {
             for (var i = 0; i < data.root.length; i++) {
                 var item = data.root[i];
-                $cellList.prepend('<a class="weui_cell" href="javascript:;">' +
+                $cellList.append('<a class="weui_cell" href="javascript:;">' +
                     '<div class="weui_cell_hd">' +
                         '<div class="left">' +
                             '<p class="img"><img src="' + item.img + '" alt=""></p>' +
@@ -90,7 +92,8 @@ $(function() {
                     '</div>' +
                 '</a>');
             }
-            $tab2.pullToRefreshDone(); // 重置下拉刷新
+            loading = false;
         }, 1000); //模拟延迟
     });
+
 });
